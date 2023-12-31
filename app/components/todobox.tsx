@@ -14,7 +14,7 @@ interface Todo {
 
 
 const Todobox = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] =  useState<Todo[]>([]);
 
   const categoryImageMap: Record<string, string> = {
     Nutrition: 'https://images.pexels.com/photos/940302/pexels-photo-940302.jpeg?auto=compress&cs=tinysrgb&w=600',
